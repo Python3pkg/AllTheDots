@@ -23,9 +23,9 @@ def command_add(stuffList, paths):
 			parents = [s for s in dotlist if i.startswith(os.path.join(s,''))]
 			if len(parents) == 0:
 				f.write(i+'\n')
-				print('{dotpath} added to {dotlistfile}'.format(dotpath=i, dotlistfile=stuffList))
+				print '{dotpath} added to {dotlistfile}'.format(dotpath=i, dotlistfile=stuffList)
 			else:
-				print('{dotlistfile} already contains {parents}'.format(dotlistfile=stuffList, parents=' and '.join(parents)))
+				print '{dotlistfile} already contains {parents}'.format(dotlistfile=stuffList, parents=' and '.join(parents))
 
 
 def command_backup(stuffList, target):
